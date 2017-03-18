@@ -1,13 +1,14 @@
 body {
-   font-family: 'Roboto', sans-serif;
+   font-family: "Roboto", sans-serif;
    font-weight: 300;
-   background-image: url('https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/background.jpg');
+   background-image: url("background.jpg");
    background-position: center top;
    background-size: cover;
 }
 
 header {
    padding: 20px 0;
+   background-color: black;
 }
 
 header .row,
@@ -19,6 +20,7 @@ footer .row {
 header h1 {
    font-weight: 700;
    margin: 0;
+   color: white;
 }
 
 header nav {
@@ -29,16 +31,25 @@ header nav {
 header p {
    padding: 0 20px;
    margin: 0;
+   font-size: 1.5rem;
+   font-weight: bold;
+   color: white;
+}
+
+header p:hover {
+   position: relative;
+   bottom: 2px;
+   text-decoration: underline;
 }
 
 .jumbotron {
    display: flex;
    align-items: center;
-   background-image: url('https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/jumbotron.jpg');
+   background-image: url("display-background.jpg");
    background-size: cover;
    color: #ffffff;
    height: 500px;
-   text-shadow: 0.25px 0.25px 0.25px #000000;
+   text-shadow: 0.75px 4px 4px black;
 }
 
 .jumbotron h2 {
@@ -79,6 +90,59 @@ section .row img {
    background-color: #E8DFE0;
    color: #ffffff;
    margin: 0 0 30px;
+}
+
+figure {
+   margin-left: 35px;
+   margin-bottom: 35px;
+   color: white;
+   font-weight: 300;
+   font-family: "Roboto", sans-serif;
+   font-size: 3rem;
+   text-shadow: 0.75px 3px 3px black;
+}
+
+figure:hover {
+   opacity: 0.7;
+}
+
+.overlay {
+   background-color: gray;
+   opacity: 0.7;
+   margin-top: -30px;
+   margin-left: -30px;
+   width: 40%;
+   height: 50px;
+   text-align: center;
+}
+
+#food {
+   background-image: url("food.jpg");
+   background-size: cover;
+   height: 350px;
+   padding: 30px 30px 30px 30px;
+}
+
+#travel {
+   background-image: url("travel.jpg");
+   background-size: cover;
+   height: 350px;
+   padding: 30px 30px 30px 30px;
+}
+
+#art {
+   background-image: url("illustration.jpg");
+   background-size: cover;
+   height: 350px;
+   padding: 30px 30px 30px 30px;
+}
+
+#technology {
+   background-image: url("technology.jpg");
+   background-size: cover;
+   height: 350px;
+   margin-bottom: 0;
+   padding: 30px 30px 30px 30px;
 }
 
 footer {
