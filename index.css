@@ -45,7 +45,7 @@ header p:hover {
 .jumbotron {
    display: flex;
    align-items: center;
-   background-image: url("display-background.jpg");
+   background-image: url("display-background-small.jpg");
    background-size: cover;
    color: #ffffff;
    height: 500px;
