@@ -7,8 +7,12 @@ body {
 }
 
 header {
-   padding: 20px 0;
+   padding: 5px 0;
    background-color: black;
+   height: 65px;
+   position: fixed;
+   width: 100%;
+   z-index: 1;
 }
 
 header .row,
@@ -17,10 +21,17 @@ footer .row {
    align-items: center;
 }
 
-header h1 {
+header h1 a {
    font-weight: 700;
    margin: 0;
+   position: relative;
+   bottom: 10px;
    color: white;
+}
+
+header h1 a:hover {
+   color: white;
+   text-decoration: none;
 }
 
 header nav {
@@ -28,7 +39,11 @@ header nav {
    justify-content: flex-end;
 }
 
-header p {
+#accountbtn {
+   margin-left: 100px;
+}
+
+header p a {
    padding: 0 20px;
    margin: 0;
    font-size: 1.5rem;
@@ -36,10 +51,33 @@ header p {
    color: white;
 }
 
-header p:hover {
+header p a:hover {
    position: relative;
    bottom: 2px;
+   color: white;
    text-decoration: underline;
+}
+
+input[type=text] {
+   margin-left: 30px;
+   border: solid 4px gray;
+   border-radius: 5px;
+   position: relative;
+   bottom: 4px;
+   width: 200px;
+}
+
+input[type=submit] {
+   width: 28px;
+   height: 25px;
+   background: #e6e6e6 url("search.png");
+   border-radius: 20px;
+   position: relative;
+   bottom: 6px;
+   border: 0 none;
+   text-indent: 100px;
+   background-size: cover;
+   display: none;
 }
 
 .jumbotron {
@@ -107,13 +145,31 @@ figure:hover {
    opacity: 0.7;
 }
 
+figure h3 {
+   text-align: center;
+   color: black;
+   font-weight: bold;
+   text-shadow: none;
+   padding-right: 10%;
+}
+
+figure h3 a {
+   color: white;
+   text-shadow: 1px 1px 1px black;
+}
+
+figure h3 a:hover {
+   color: #e6e6e6;
+   text-decoration: none;
+}
+
 .overlay {
    background-color: gray;
    opacity: 0.7;
    margin-top: -30px;
    margin-left: -30px;
-   width: 40%;
-   height: 50px;
+   width: 65%;
+   height: 15%;
    text-align: center;
 }
 
