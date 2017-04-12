@@ -1,9 +1,8 @@
 body {
    font-family: "Roboto", sans-serif;
    font-weight: 300;
-   background-image: url("background.jpg");
    background-position: center top;
-   background-size: cover;
+   background-color: #f7f7f7;
 }
 
 header {
@@ -13,6 +12,7 @@ header {
    position: fixed;
    width: 100%;
    z-index: 1;
+   opacity: 0.7;
 }
 
 header .row,
@@ -34,177 +34,152 @@ header h1 a:hover {
    text-decoration: none;
 }
 
-header nav {
-   display: flex;
-   justify-content: flex-end;
-}
-
-#accountbtn {
-   margin-left: 100px;
-}
-
-header p a {
-   padding: 0 20px;
-   margin: 0;
-   font-size: 1.5rem;
-   font-weight: bold;
-   color: white;
-}
-
-header p a:hover {
-   position: relative;
-   bottom: 2px;
-   color: white;
-   text-decoration: underline;
-}
-
-input[type=text] {
-   margin-left: 30px;
-   border: solid 4px gray;
-   border-radius: 5px;
-   position: relative;
-   bottom: 4px;
-   width: 200px;
-}
-
-input[type=submit] {
-   width: 28px;
-   height: 25px;
-   background: #e6e6e6 url("search.png");
-   border-radius: 20px;
-   position: relative;
-   bottom: 6px;
-   border: 0 none;
-   text-indent: 100px;
-   background-size: cover;
-   display: none;
-}
-
 .jumbotron {
    display: flex;
    align-items: center;
    background-color: gray;
-   background-image: url("display-background.JPG");
+   background-image: url("display-background-2.JPG");
    background-size: cover;
-   color: #ffffff;
-   height: 500px;
-   text-shadow: 0.75px 4px 4px black;
+   color: white;
+   height: 65em;
+   text-shadow: 0.75px 4px 2px black;
+   font-family: "Berkshire Swash", "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.jumbotron .row {
+   display: table;
+   margin: 0 auto;
+   margin-top: 60px;
+   padding-top: 40px;
+   background: rgba(247, 247, 247, 0.3); 
+   border-radius: 5px;
+   width: 710px;
+   height: 180px;
 }
 
 .jumbotron h2 {
    font-size: 60px;
    font-weight: 700;
    margin: 0;
-   color: #fff;
 }
 
 .jumbotron h3 {
    margin: 0 0 20px;
-   color: #fff;
 }
 
-section .row img {
-   margin: 0 0 30px;
-   width: 100%;
-}
-
-.col-md-6 {
-   margin: 0 0 30px;
-}
-
-.btn.btn-primary {
-   border-radius: 2px;
-   border: 0px;
-   color: #fbd1d5;
-   text-shadow: none;
-   background-color: #ffffff;
-}
-
-.btn.btn-primary:hover {
-   color: #ffffff;
-   background-color: #fbd1d5;
-}
-
-.btn-secondary {
-   background-color: #E8DFE0;
-   color: #ffffff;
-   margin: 0 0 30px;
-}
-
-figure {
-   margin-left: 35px;
-   margin-bottom: 35px;
-   color: white;
-   font-weight: 300;
-   font-family: "Roboto", sans-serif;
-   font-size: 3rem;
-   text-shadow: 0.75px 3px 3px black;
-}
-
-figure:hover {
-   opacity: 0.7;
-}
-
-figure h3 {
+#navbar {
+   font-size: 18px;
    text-align: center;
-   color: black;
-   font-weight: bold;
-   text-shadow: none;
-   padding-right: 10%;
+   width: 50%;
+   background-color: black;
+   border-radius: 8px;
 }
 
-figure h3 a {
+#navbar a {
+   height: 50px;
+   padding-top: 10px;
+   background-color: black;
+   text-decoration: none;
    color: white;
-   text-shadow: 1px 1px 1px black;
 }
 
-figure h3 a:hover {
-   color: #e6e6e6;
+#navbar a:hover {
+   color: gray;
    text-decoration: none;
 }
 
-.overlay {
-   background-color: gray;
-   opacity: 0.7;
-   margin-top: -30px;
-   margin-left: -30px;
-   width: 65%;
-   height: 15%;
+#content {
+   font-family: Helvetica, Arial, sans-serif;
+   margin-top: 35px;
+   margin-bottom: 20px;
+}
+
+.main {
+   float: left;
+   width: 70%;
+   background-color: #f7f7f7;
+}
+
+article {
+   float: left;
+   margin-bottom: 30px;
+   padding: 10px 30px 30px 30px;
+   /*height: 700px;*/
+   background-color: white;
+   color: black;
+   font-size: 17px;
+}
+
+article h1 {
+   font-family: "Roboto", Helvetica, sans-serif;
+}
+
+article .date {
+   font-size: 14px;
+   color: gray;
+}
+
+article img {
+   height: 400px;
+   width: 600px;
+   margin-bottom: 15px;
+   border-radius: 5px;
+}
+
+.more {
+   height: 30px;
+   width: 120px;
+   margin: 0 auto;
+   padding-top: 2px;
+   background-color: #f7f7f7;
+   color: black;
+   text-align: center;
+   border: 1px gray solid;
+   border-radius: 8px;
+   cursor: pointer;
+   box-shadow: 1px 1px 4px black;
+}
+
+.more:hover {
+   background-color: black;
+   border: 1px #444444 solid;
+   color: white;
+}
+
+.sidebar {
+   float: right;
+   width: 30%;
+   padding: 20px 20px 20px 20px;
+   background-color: white;
+   font-size: 17px;
+}
+
+.sidebar div {
    text-align: center;
 }
 
-#food {
-   background-image: url("food.jpg");
-   background-size: cover;
-   height: 350px;
-   padding: 30px 30px 30px 30px;
+.sidebar div img {
+   border-radius: 100%;
+   height: 150px;
+   width: 150px;
+   margin-bottom: 15px;
 }
 
-#travel {
-   background-image: url("travel.jpg");
-   background-size: cover;
-   height: 350px;
-   padding: 30px 30px 30px 30px;
-}
-
-#art {
-   background-image: url("illustration.jpg");
-   background-size: cover;
-   height: 350px;
-   padding: 30px 30px 30px 30px;
-}
-
-#technology {
-   background-image: url("technology.jpg");
-   background-size: cover;
-   height: 350px;
-   margin-bottom: 0;
-   padding: 30px 30px 30px 30px;
+.sidebar p {
+   text-align: center;
 }
 
 footer {
    font-size: 12px;
-   padding: 20px 0;
+   height: 45px;
+   width: 100%;
+   padding: 10px 0;
+   text-align: center;
+   background-color: black;
+   color: white;
+   position: fixed;
+   bottom: 0px;
+   opacity: 0.8;
 }
 
 footer .col-sm-8 {
@@ -217,6 +192,10 @@ footer ul {
 }
 
 footer li img {
-   width: 32px;
-   height: 32px;
+   width: 24px;
+   height: 24px;
+}
+
+footer li img:hover {
+   opacity: 0.7;
 }

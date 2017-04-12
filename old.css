@@ -1,0 +1,222 @@
+body {
+   font-family: "Roboto", sans-serif;
+   font-weight: 300;
+   background-image: url("background.jpg");
+   background-position: center top;
+   background-size: cover;
+}
+
+header {
+   padding: 5px 0;
+   background-color: black;
+   height: 65px;
+   position: fixed;
+   width: 100%;
+   z-index: 1;
+}
+
+header .row,
+footer .row {
+   display: flex;
+   align-items: center;
+}
+
+header h1 a {
+   font-weight: 700;
+   margin: 0;
+   position: relative;
+   bottom: 10px;
+   color: white;
+}
+
+header h1 a:hover {
+   color: white;
+   text-decoration: none;
+}
+
+header nav {
+   display: flex;
+   justify-content: flex-end;
+}
+
+#accountbtn {
+   margin-left: 100px;
+}
+
+header p a {
+   padding: 0 20px;
+   margin: 0;
+   font-size: 1.5rem;
+   font-weight: bold;
+   color: white;
+}
+
+header p a:hover {
+   position: relative;
+   bottom: 2px;
+   color: white;
+   text-decoration: underline;
+}
+
+input[type=text] {
+   margin-left: 30px;
+   border: solid 4px gray;
+   border-radius: 5px;
+   position: relative;
+   bottom: 4px;
+   width: 200px;
+}
+
+input[type=submit] {
+   width: 28px;
+   height: 25px;
+   background: #e6e6e6 url("search.png");
+   border-radius: 20px;
+   position: relative;
+   bottom: 6px;
+   border: 0 none;
+   text-indent: 100px;
+   background-size: cover;
+   display: none;
+}
+
+.jumbotron {
+   display: flex;
+   align-items: center;
+   background-color: gray;
+   background-image: url("display-background.JPG");
+   background-size: cover;
+   color: #ffffff;
+   height: 500px;
+   text-shadow: 0.75px 4px 4px black;
+}
+
+.jumbotron h2 {
+   font-size: 60px;
+   font-weight: 700;
+   margin: 0;
+   color: #fff;
+}
+
+.jumbotron h3 {
+   margin: 0 0 20px;
+   color: #fff;
+}
+
+section .row img {
+   margin: 0 0 30px;
+   width: 100%;
+}
+
+.col-md-6 {
+   margin: 0 0 30px;
+}
+
+.btn.btn-primary {
+   border-radius: 2px;
+   border: 0px;
+   color: #fbd1d5;
+   text-shadow: none;
+   background-color: #ffffff;
+}
+
+.btn.btn-primary:hover {
+   color: #ffffff;
+   background-color: #fbd1d5;
+}
+
+.btn-secondary {
+   background-color: #E8DFE0;
+   color: #ffffff;
+   margin: 0 0 30px;
+}
+
+figure {
+   margin-left: 35px;
+   margin-bottom: 35px;
+   color: white;
+   font-weight: 300;
+   font-family: "Roboto", sans-serif;
+   font-size: 3rem;
+   text-shadow: 0.75px 3px 3px black;
+}
+
+figure:hover {
+   opacity: 0.7;
+}
+
+figure h3 {
+   text-align: center;
+   color: black;
+   font-weight: bold;
+   text-shadow: none;
+   padding-right: 10%;
+}
+
+figure h3 a {
+   color: white;
+   text-shadow: 1px 1px 1px black;
+}
+
+figure h3 a:hover {
+   color: #e6e6e6;
+   text-decoration: none;
+}
+
+.overlay {
+   background-color: gray;
+   opacity: 0.7;
+   margin-top: -30px;
+   margin-left: -30px;
+   width: 65%;
+   height: 15%;
+   text-align: center;
+}
+
+#food {
+   background-image: url("food.jpg");
+   background-size: cover;
+   height: 350px;
+   padding: 30px 30px 30px 30px;
+}
+
+#travel {
+   background-image: url("travel.jpg");
+   background-size: cover;
+   height: 350px;
+   padding: 30px 30px 30px 30px;
+}
+
+#art {
+   background-image: url("illustration.jpg");
+   background-size: cover;
+   height: 350px;
+   padding: 30px 30px 30px 30px;
+}
+
+#technology {
+   background-image: url("technology.jpg");
+   background-size: cover;
+   height: 350px;
+   margin-bottom: 0;
+   padding: 30px 30px 30px 30px;
+}
+
+footer {
+   font-size: 12px;
+   padding: 20px 0;
+}
+
+footer .col-sm-8 {
+   display: flex;
+   justify-content: flex-end;
+}
+
+footer ul {
+   list-style: none;
+}
+
+footer li img {
+   width: 32px;
+   height: 32px;
+}
