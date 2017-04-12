@@ -88,23 +88,23 @@ header h1 a:hover {
    text-decoration: none;
 }
 
-.repeat.animate-enter {
-   -webkit-transition: 1s linear all;
-   transition: 1s linear all;
+.ng-enter {
+   -webkit-transition: 0.5s linear all;
+   transition: 0.5s linear all;
    opacity: 0;
 }
 
-.repeat.animate-enter.animate-enter-active {
+.ng-enter-active {
    opacity: 1;
 }
 
-.repeat.animate-leave {
-   -webkit-transition: 1s linear all;
-   transition: 1s linear all;
+.ng-leave {
+   -webkit-transition: 0.5s linear all;
+   transition: 0.5s linear all;
    opacity: 1;
 }
 
-.repeat.animate-leave.animate-leave-active {
+.ng-leave-active {
    opacity: 0;
 }
 

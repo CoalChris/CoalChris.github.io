@@ -6,7 +6,7 @@ app.controller("stories", ["$scope", function($scope) {
          date: "12 April 2017",
          tag: "website",
          blurb: "Changed design and added functionality to website.",
-         text: "Set homepage image to span height.<br>Added 'Read More' button.<br>Added capacity to include links and media in article text.<br>Added navigation bar.<br>Fixed icons."
+         text: "Set homepage image to span height.<br>Added 'Read More' button.<br>Added capacity to include links and media in article text.<br>Added navigation bar.<br>Fixed icons.<br>Moved dynamic content animations to AngularJS module."
       }, 
       { 
          title: "SETTING UP HOME",
@@ -38,7 +38,9 @@ app.controller("stories", ["$scope", function($scope) {
    }
 
    $scope.filter = function(value) {
-      $scope.type = value;
+      if (value != 'more') {
+         $scope.type = value;
+      }
       $scope.numResults = 0;
       $scope.$apply();
    }

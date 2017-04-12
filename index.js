@@ -7,16 +7,16 @@ $(document).ready(function() {
    $(".jumbotron").hide();
    $("footer").hide();
    $("header").hide();
-   $(".text").hide();
+   //$(".text").hide();
    
 
    $("header").slideDown(800);
    $(".jumbotron").fadeIn(1000);
    $("footer").fadeIn(3000);
-   $(".more").click(function() {
+   /*$(".more").click(function() {
       $(this).hide();
       $(this).next(".text").fadeIn(800);
-   });
+   });*/
    /*
    $.each(figures, function(i, item) {
       setTimeout(function() {

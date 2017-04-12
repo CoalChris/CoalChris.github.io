@@ -44,13 +44,13 @@
       </section>
       <section class="container" id="content">
          <div class="main">
-            <article class="repeat" ng-repeat="article in articles | filter: filterType">
+            <article ng-repeat="article in articles | filter: filterType">
                <h1 class="title">{{ article.title }}</h2>
                <p class="date">{{ article.date }}</p>
                <img class="image" ng-src="{{ article.image }}">
                <p class="blurb">{{ article.blurb }}</p>
-               <p class="more">Read More →</p>
-               <p class="text" ng-bind-html="article.text"/>
+               <p class="more" ng-click="showText = !showText; filter('more')" ng-show="!showText">Read More →</p>
+               <p class="text" ng-show="showText" ng-bind-html="article.text"/>
             </article>
          </div>
          <div class="sidebar">
