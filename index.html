@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="TCT">
 <head>
    <title>The Chris Times</title>
    <meta charset="utf-8"/>
@@ -12,15 +12,16 @@
    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
    <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-sanitize.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script> 
    <script type="text/javascript" src="index.js"></script>
    <!--AngularJS Scripts-->
    <script type="text/javascript" src="app.js"></script>
    <script type="text/javascript" src="stories.js"></script>
 </head>
-   <body ng-app="TCT">
+   <body ng-controller="stories">
       <header class="container-fluid">
          <div class="row">
-            <h1 class="col-sm-2"><a href="#">TCT</a></h1>
+            <h1 class="col-sm-2"><a href="index.html">TCT</a></h1>
          </div>
       </header>
       <section class="jumbotron">
@@ -33,17 +34,17 @@
       </section>
       <section>
          <div class="container" id="navbar">
-            <a href="" class="col-sm-2">Technology</a>
-            <a href="" class="col-sm-2">Food</a>
-            <a href="" class="col-sm-2">Anime</a>
-            <a href="" class="col-sm-2">Religion</a>
+            <a href="" class="col-sm-2" ng-click="filter('technology')">Technology</a>
+            <a href="" class="col-sm-2" ng-click="filter('food')">Food</a>
+            <a href="" class="col-sm-2" ng-click="filter('anime')">Anime</a>
+            <a href="" class="col-sm-2" ng-click="filter('religion')">Religion</a>
             <a href="https://www.facebook.com/coal.chris" target="_blank" class="col-sm-2">Facebook</a>
             <a href="https://www.youtube.com/channel/UCf9J4CNaeTISEJAm-nR-nmg" target="_blank" class="col-sm-2">YouTube</a>
          </div>
       </section>
-      <section class="container" id="content" ng-controller="stories">
+      <section class="container" id="content">
          <div class="main">
-            <article ng-repeat="article in articles">
+            <article class="repeat" ng-repeat="article in articles | filter: filterType">
                <h1 class="title">{{ article.title }}</h2>
                <p class="date">{{ article.date }}</p>
                <img class="image" ng-src="{{ article.image }}">

@@ -88,6 +88,26 @@ header h1 a:hover {
    text-decoration: none;
 }
 
+.repeat.animate-enter {
+   -webkit-transition: 1s linear all;
+   transition: 1s linear all;
+   opacity: 0;
+}
+
+.repeat.animate-enter.animate-enter-active {
+   opacity: 1;
+}
+
+.repeat.animate-leave {
+   -webkit-transition: 1s linear all;
+   transition: 1s linear all;
+   opacity: 1;
+}
+
+.repeat.animate-leave.animate-leave-active {
+   opacity: 0;
+}
+
 #content {
    font-family: Helvetica, Arial, sans-serif;
    margin-top: 35px;
