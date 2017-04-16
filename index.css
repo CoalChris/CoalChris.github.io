@@ -125,6 +125,7 @@ article {
    margin-bottom: 30px;
    padding: 10px 30px 30px 30px;
    /*height: 700px;*/
+   width: 740px;
    background-color: white;
    color: black;
    font-size: 17px;
@@ -140,7 +141,6 @@ article .date {
 }
 
 article img {
-   height: 400px;
    width: 600px;
    margin-bottom: 15px;
    border-radius: 5px;
