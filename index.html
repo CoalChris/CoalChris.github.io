@@ -27,14 +27,14 @@
       <section class="jumbotron">
          <div class="container">
             <div class="row text-center">
-               <h2>THE CHRIS TIMES</h2>
+               <h2>The Chris Times</h2>
                <h3>A glimpse into the life of Coal Chris</h3>
             </div>
          </div>
       </section>
       <section>
          <div class="container" id="navbar">
-            <a href="" class="col-sm-2" ng-click="filter('technology')">Technology</a>
+            <a href="" class="col-sm-2" ng-click="filter('travel')">Travels</a>
             <a href="" class="col-sm-2" ng-click="filter('food')">Food</a>
             <a href="" class="col-sm-2" ng-click="filter('anime')">Anime</a>
             <a href="" class="col-sm-2" ng-click="filter('religion')">Religion</a>
@@ -44,7 +44,7 @@
       </section>
       <section class="container" id="content">
          <div class="main">
-            <article ng-repeat="article in articles | filter: filterType">
+            <article ng-repeat="article in articles | filter: filterType | limitTo: maxResults">
                <h1 class="title">{{ article.title }}</h2>
                <p class="date">{{ article.date }}</p>
                <img class="image" ng-src="{{ article.image }}">
@@ -58,7 +58,7 @@
                <img src="profile.jpg">
             </div>
             <p>
-               Hi, I'm Chris and welcome to my website. I am an avid follower of technology, Japanese culture, and the Christian faith. Hopefully you'll discover some interesting facts, have a good laugh at my stories, and be inspired to walk down a similarly awesome path!
+               Hi, I'm Chris and welcome to my website. I am an avid follower of technology, Japanese culture, and the Christian faith. I'm based in Sydney, Australia, but love to travel all over the world! Hopefully you'll discover some interesting facts, have a good laugh at my stories, and be inspired to walk down a similarly awesome path!
             </p>
          </div>
       </section>

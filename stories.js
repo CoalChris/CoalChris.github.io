@@ -1,8 +1,16 @@
 app.controller("stories", ["$scope", function($scope) {
    $scope.articles = [ 
       { 
+         title: "Meet the Halal Snack Pack",
+         image: "hsp.jpg",
+         date: "18 April 2017",
+         tag: "food",
+         blurb: "The Halal Snack Pack (otherwise known as the HSP) is one of Australia's greatest food inventions. Taking off in a crazy hype in 2015, the infamous box of Middle-Eastern cuisine mixed with good ol' chips can now be found in just about every local kebab shop across all major cities. You'll want to know what you're looking for before heading out in search of some 'snackies' though!",
+         text: "Finding a kebab shop in Sydney isn't too hard. Sydney CBD, Northern Suburbs, North Shore, Inner West, nearly every suburb has a local Mecca serving you piping hot kebabs now. Are Halal Snack Packs any different?<br><br>It turns out that most joints don't make the cut. Using a variety of measurements, Aussies in the <a href=\"https://www.facebook.com/groups/HalalSnackPackAppreciationSociety/\" target=\"_blank\">Halal Snack Pack Appreciation Society</a>, the biggest Facebook group and what started this new HSP movement, have managed to rank HSP-serving shops and weed out those who can't keep up with competition. These measurements include the shop owner's greeting, shop display, halal certification, pricing, HSP packaging, meat quality, chips quality, and finally the choice of sauces, with the 'Holy Trinity' (Chilli, BBQ, Garlic) being the standard choice for HSP fans. Highly rated snack packs are referred to as 'halal' snack packs, whereas low-scoring snack packs will be deemed 'haram'. It's not surprising that individuals who choose to eat the worst snack packs, especially those who choose tomato sauce or add salad, are branded as 'haram dingoes'. A list of the best kebab shops across Australia can be found on the HSP Appreciation Society page.<br><br>Today I visited the esteemed Metro One Kebab, Pizza & Pide in Ashfield, Sydney. It'd been half a year since my last snack pack and I'd been keen for another artery-clogging experience of juicy doner kebab meat and freshly fried hot chips. Together with 5 friends, we entered the open store front to be greeted with a 'What can I get for you?' while gazing at the lit up boards and neon signs reassuring us of the halal certified meat. HSP usually come in a variety of sizes where single person servings come in takeaway styrofoam boxes. A regular is enough for your average bloke and costs about AUD$10 in most places. A large is more than what you'd want and sets you back another AUD$3 or so. Additional cheese? Go for it, another dollar or two. We decided instead to tackle the $55 large 15\" pizza box HSP (refer to the photo above) with cheese and mixed meat, approximately the size of four large HSP. It came with a free 1.25L bottle of soft drink. It was the 6 of us versus the equivalent of 4 large HSP, we figured this way we had the option of going home full instead of sprawled on the ground gasping for breath after a deathly amount of meat, chips and sauce. The meat was about the same as most places (saturated and delicious), but the chips were only slightly crunchy. Crunchy chips are what set apart the best HSP from the mediocre ones. For reference, I think the #1 kebab shop nearby in Campbelltown, King Kebab House, is the only place with golden crunchy chips. The top was lathered with the 'Holy Trinity', finishing the masterpiece of a HSP. All in all, it was a fairly good HSP and great value feed, but it just left me craving for the king in Campbelltown.<br><br>Interestingly enough, NSW Senator Sam Dastyari, known for his comical interactions with One Nation Party's founder and leader Pauline Hanson, was filming some footage on food and multiculturalism in Metro One. I definitely didn't let this opportunity slip away and decided to sneak some hilarious poses in, show off my swag and photo-bombing skills. Sam actually came around and interviewed a few of the tables, including us, and I'm waiting eagerly to see the video uploaded online.<br><br>If you're looking for reliable snack packs, I would definitely stop by each of the HSP Appreciation Society recommendations. Although, any nearby kebab shop should suffice if you don't care about soggy chips. Good luck hunting for the best HSP!"
+      },
+      { 
          title: "Meaning Behind Easter",
-         image: "easter.JPG",
+         image: "easter.jpg",
          date: "16 April 2017",
          tag: "religion",
          blurb: "Easter is a time of celebration all across the globe. This festive season is represented by delicious chocolate eggs and bunnies, but what's the back story behind this annual event?",
@@ -27,20 +35,14 @@ app.controller("stories", ["$scope", function($scope) {
    ];
 
    $scope.type = "all";
-   $scope.numStories = 3; // Change this for every new story
-   $scope.numResults = 0;
-   $scope.maxResults = 2 * $scope.numStories;
+   $scope.maxResults = 5;
 
    $scope.filterType = function(story) {
-      if ($scope.numResults < $scope.maxResults) {
-         if ($scope.type == "all") {
-            $scope.numResults = $scope.numResults + 1;
+      if ($scope.type == "all") {
+         return true;
+      } else {
+         if (story.tag.indexOf($scope.type) !== -1) {
             return true;
-         } else {
-            if (story.tag.indexOf($scope.type) !== -1) {
-               $scope.numResults = $scope.numResults + 1;
-               return true;
-            }
          }
       }
       return false;
