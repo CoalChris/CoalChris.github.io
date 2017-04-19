@@ -43,7 +43,7 @@ header h1 a:hover {
    color: white;
    height: 65em;
    text-shadow: 0.75px 4px 2px black;
-   font-family: "Berkshire Swash", "Monotype Corsiva", "Comic Sans MS", "Comic Sans", cursive;
+   font-family: "Berkshire Swash", "Monotype Corsiva", Papyrus, "Comic Sans MS", "Comic Sans", cursive;
 }
 
 .jumbotron .row {
