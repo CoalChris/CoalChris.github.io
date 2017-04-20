@@ -58,17 +58,18 @@ header h1 a:hover {
 }
 
 .jumbotron h2 {
-   font-size: 60px;
+   font-size: 8rem;
    font-weight: 700;
    margin: 0;
 }
 
 .jumbotron h3 {
    margin: 0 0 20px;
+   font-size: 2.5rem;
 }
 
 #navbar {
-   font-size: 18px;
+   font-size: 2rem;
    text-align: center;
    width: 50%;
    background-color: black;
@@ -76,8 +77,8 @@ header h1 a:hover {
 }
 
 #navbar a {
-   height: 50px;
-   padding-top: 10px;
+   height: 2.5em;
+   padding-top: 0.5em;
    background-color: black;
    text-decoration: none;
    color: white;
@@ -125,24 +126,25 @@ article {
    margin-bottom: 30px;
    padding: 10px 30px 30px 30px;
    /*height: 700px;*/
-   width: 740px;
+   width: 95%;
    background-color: white;
    color: black;
-   font-size: 17px;
+   font-size: 1.7rem;
 }
 
 article h1 {
    font-family: "Roboto", Helvetica, sans-serif;
+   font-size: 3.5rem;
 }
 
 article .date {
-   font-size: 14px;
+   font-size: 1.4rem;
    color: gray;
 }
 
 article img {
    display: block;
-   width: 600px;
+   width: 85%;
    margin-bottom: 15px;
    margin-left: auto;
    margin-right: auto;
@@ -150,8 +152,8 @@ article img {
 }
 
 .more {
-   height: 30px;
-   width: 120px;
+   height: 1.8em;
+   width: 7em;
    margin: 0 auto;
    padding-top: 2px;
    background-color: #f7f7f7;
@@ -169,12 +171,22 @@ article img {
    color: white;
 }
 
+.text {
+  -webkit-transition: 0.75s linear all;
+  transition: 0.75s linear all;  
+  opacity: 1;
+}
+
+.text.ng-hide {
+  opacity: 0;
+}
+
 .sidebar {
    float: right;
    width: 30%;
    padding: 20px 20px 20px 20px;
    background-color: white;
-   font-size: 17px;
+   font-size: 1.7rem;
 }
 
 .sidebar div {
@@ -183,8 +195,8 @@ article img {
 
 .sidebar div img {
    border-radius: 100%;
-   height: 150px;
-   width: 150px;
+   height: 12em;
+   width: 12em;
    margin-bottom: 15px;
 }
 
