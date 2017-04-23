@@ -7,7 +7,7 @@ body {
 
 header {
    padding: 5px 0;
-   background: rgba(0, 0, 0, 0.7);
+   background: rgba(0, 0, 0, 0.8);
    height: 65px;
    position: fixed;
    width: 100%;
@@ -45,15 +45,21 @@ header h1 a:hover {
    font-family: "Berkshire Swash", "Monotype Corsiva", Papyrus, "Comic Sans MS", "Comic Sans", cursive;
 }
 
-.jumbotron .row {
-   display: table;
+.jumbotron #jumbotext {
    margin: 0 auto;
-   margin-top: 60px;
-   padding-top: 40px;
+   text-align: center;
+   margin-top: 15em;
+   margin-bottom: 15em;
+   padding-top: 1.5em;
+   padding-bottom: 1.5em;
    background: rgba(247, 247, 247, 0.3);
    border-radius: 5px;
-   width: 710px;
-   height: 180px;
+}
+
+.jumbotron h1 {
+   font-size: 13rem;
+   font-weight: 700;
+   margin: 0;
 }
 
 .jumbotron h2 {
@@ -67,7 +73,12 @@ header h1 a:hover {
    font-size: 2.5rem;
 }
 
-nav, #navbar {
+nav {
+   font-size: 2rem;
+   text-align: center;
+}
+
+#navbar {
    font-size: 2rem;
    text-align: center;
    background-color: black;
@@ -232,6 +243,12 @@ footer li img:hover {
 }
 
 /* navbar display depending on device screen size */
+@media screen and (max-width: 767px) {
+   nav .col-sm-3 {
+      display: none;
+   }
+}
+
 @media screen and (max-width: 1200px) {
    #navbar {
       display: none;
@@ -243,13 +260,13 @@ footer li img:hover {
       display: none;
    }
 }
-/*
+
 @media screen and (min-width: 1201px) and (max-width: 1330px) {
    #navbar a {
       display: none;
    }
 
-   .col-sm-2 {
+   #navbar .col-sm-2 {
       width: 25%;
    }
 }
@@ -266,7 +283,33 @@ footer li img:hover {
    }
 }
 
-/* content display depending on device screen size 
+/* content display depending on device screen size */
+@media screen and (max-width: 516px) {
+   .jumbotron {
+      display: none;
+   }
+}
+
+@media screen and (min-width: 517px) and (max-width: 655px) {
+   #jumbotext {
+      width: 35em;
+   }
+
+   #title {
+      display: none;
+   }
+}
+
+@media screen and (min-width: 656px) {
+   #jumbotext {
+      width: 45em;
+   }
+
+   .mobile-title {
+      display: none;
+   }
+}
+
 @media screen and (max-width: 1200px) {
    .sidebar {
       display: inline-block;
@@ -281,9 +324,9 @@ footer li img:hover {
    .sidebar p {
       padding-top: 1.7rem;
    }
-}*/
+}
 
-@media screen and (max-width: 1201px) {
+@media screen and (min-width: 1201px) {
    .main {
       float: left;
       width: 70%;
