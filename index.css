@@ -243,7 +243,7 @@ footer li img:hover {
       display: none;
    }
 }
-
+/*
 @media screen and (min-width: 1201px) and (max-width: 1330px) {
    #navbar a {
       display: none;
@@ -266,7 +266,7 @@ footer li img:hover {
    }
 }
 
-/* content display depending on device screen size */
+/* content display depending on device screen size 
 @media screen and (max-width: 1200px) {
    .sidebar {
       display: inline-block;
@@ -281,9 +281,9 @@ footer li img:hover {
    .sidebar p {
       padding-top: 1.7rem;
    }
-}
+}*/
 
-@media screen and (min-width: 1201px) {
+@media screen and (max-width: 1201px) {
    .main {
       float: left;
       width: 70%;
