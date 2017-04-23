@@ -3,7 +3,7 @@
 <head>
    <title>The Chris Times</title>
    <meta charset="utf-8"/>
-   <meta name="viewport" content="width=device-width, initial-scale=2"> 
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
    <link rel="stylesheet" href="bootstrap.min.css">
    <link rel='stylesheet' type='text/css' href="roboto.css">
    <link rel='stylesheet' type='text/css' href="berkshire-swash.css">
@@ -24,10 +24,24 @@
          <div class="row">
             <h1 class="col-sm-2"><a href="https://coalchris.github.io/">TCT</a></h1>
             <nav class="col-sm-12">
-               <p class="col-sm-3" ng-click="filter('travel')">Travels</p>
-               <p class="col-sm-3" ng-click="filter('food')">Food</p>
-               <p class="col-sm-3" ng-click="filter('anime')">Anime</p>
-               <p class="col-sm-3" ng-click="filter('religion')">Religion</p>
+               <a href="#posts" class="col-sm-3" ng-click="filter('travel')">Travels</a>
+               <a href="#posts" class="col-sm-3" ng-click="filter('food')">Food</a>
+               <a href="#posts" class="col-sm-3" ng-click="filter('anime')">Anime</a>
+               <a href="#posts" class="col-sm-3" ng-click="filter('religion')">Religion</a>
+               <div class="col-sm-2" id="dropdown">
+                  <div id="menu-btn">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                  </div>
+                  <div id="dropdown-menu">
+                     <a href="#posts" class="col-sm-2" ng-click="filter('travel')">Travels</a>
+                     <a href="#posts" class="col-sm-2" ng-click="filter('food')">Food</a>
+                     <a href="#posts" class="col-sm-2" ng-click="filter('anime')">Anime</a>
+                     <a href="#posts" class="col-sm-2" ng-click="filter('religion')">Religion</a>
+                  </div>
+               </div>
             </nav>
          </div>
       </header>
@@ -60,8 +74,9 @@
             <p>
                Hi, I'm Chris and welcome to my website. I am an avid follower of technology, Japanese culture, and the Christian faith. I'm based in Sydney, Australia, but love to travel all over the world! Hopefully you'll discover some interesting facts, have a good laugh at my stories, and be inspired to walk down a similarly awesome path!
             </p>
+            <div id="posts"></div>
          </div>
-         <div class="main">
+         <div id="main">
             <article ng-repeat="article in articles | filter: filterType | limitTo: maxResults">
                <h1 class="title">{{ article.title }}</h2>
                <p class="date">{{ article.date }}</p>

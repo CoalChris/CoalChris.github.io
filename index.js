@@ -7,12 +7,21 @@ $(document).ready(function() {
    $(".jumbotron").hide();
    $("footer").hide();
    $("header").hide();
+   $("#dropdown-menu").hide();
    //$(".text").hide();
    
 
    $("header").slideDown(800);
    $(".jumbotron").fadeIn(1000);
    $("footer").fadeIn(3000);
+   $("#menu-btn").click(function() {
+      $("#dropdown-menu").toggle();
+      $("#menu-btn").toggleClass('open');
+   });
+   $("#dropdown-menu").click(function() {
+      $("#dropdown-menu").toggle();
+      $("#menu-btn").toggleClass('open');
+   });
    /*$(".more").click(function() {
       $(this).hide();
       $(this).next(".text").fadeIn(800);
