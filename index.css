@@ -7,12 +7,11 @@ body {
 
 header {
    padding: 5px 0;
-   background-color: black;
+   background: rgba(0, 0, 0, 0.7);
    height: 65px;
    position: fixed;
    width: 100%;
    z-index: 1;
-   opacity: 0.7;
 }
 
 header .row,
@@ -51,7 +50,7 @@ header h1 a:hover {
    margin: 0 auto;
    margin-top: 60px;
    padding-top: 40px;
-   background: rgba(247, 247, 247, 0.3); 
+   background: rgba(247, 247, 247, 0.3);
    border-radius: 5px;
    width: 710px;
    height: 180px;
@@ -68,12 +67,21 @@ header h1 a:hover {
    font-size: 2.5rem;
 }
 
-#navbar {
+nav, #navbar {
    font-size: 2rem;
    text-align: center;
-   width: 50%;
    background-color: black;
    border-radius: 8px;
+}
+
+nav p, #navbar p {
+   padding-top: 0.5em;
+   color: white;
+}
+
+a:active, a:focus {
+   outline: 0;
+   border: none;
 }
 
 #navbar a {
@@ -82,6 +90,11 @@ header h1 a:hover {
    background-color: black;
    text-decoration: none;
    color: white;
+}
+
+nav p:hover, #navbar p:hover {
+   cursor: pointer;
+   color: gray;
 }
 
 #navbar a:hover {
@@ -116,17 +129,12 @@ header h1 a:hover {
 }
 
 .main {
-   float: left;
-   width: 70%;
    background-color: #f7f7f7;
 }
 
 article {
-   float: left;
    margin-bottom: 30px;
    padding: 10px 30px 30px 30px;
-   /*height: 700px;*/
-   width: 95%;
    background-color: white;
    color: black;
    font-size: 1.7rem;
@@ -182,26 +190,15 @@ article img {
 }
 
 .sidebar {
-   float: right;
-   width: 30%;
    padding: 20px 20px 20px 20px;
    background-color: white;
    font-size: 1.7rem;
 }
 
-.sidebar div {
-   text-align: center;
-}
-
 .sidebar div img {
    border-radius: 100%;
-   height: 12em;
-   width: 12em;
-   margin-bottom: 15px;
-}
-
-.sidebar p {
-   text-align: center;
+   height: 18rem;
+   width: 18rem;
 }
 
 footer {
@@ -210,11 +207,10 @@ footer {
    width: 100%;
    padding: 10px 0;
    text-align: center;
-   background-color: black;
+   background: rgba(0, 0, 0, 0.8);
    color: white;
    position: fixed;
    bottom: 0px;
-   opacity: 0.8;
 }
 
 footer .col-sm-8 {
@@ -233,4 +229,85 @@ footer li img {
 
 footer li img:hover {
    opacity: 0.7;
+}
+
+/* navbar display depending on device screen size */
+@media screen and (max-width: 1200px) {
+   #navbar {
+      display: none;
+   }
+}
+
+@media screen and (min-width: 1201px) {
+   nav {
+      display: none;
+   }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1330px) {
+   #navbar a {
+      display: none;
+   }
+
+   .col-sm-2 {
+      width: 25%;
+   }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1480px) {
+   #navbar {
+      width: 70%;
+   }
+}
+
+@media screen and (min-width: 1481px) {
+   #navbar {
+      width: 50%;
+   }
+}
+
+/* content display depending on device screen size */
+@media screen and (max-width: 1200px) {
+   .sidebar {
+      display: inline-block;
+      margin-bottom: 40px;
+   }
+
+   .sidebar div img {
+      float: left;
+      margin-right: 20px;
+   }
+
+   .sidebar p {
+      padding-top: 1.7rem;
+   }
+}
+
+@media screen and (min-width: 1201px) {
+   .main {
+      float: left;
+      width: 70%;
+   }
+
+   article {
+      float: left;
+      width: 95%;
+   }
+
+   .sidebar {
+      float: right;
+      width: 30%;
+   }
+
+   .sidebar div {
+      text-align: center;
+   }
+
+   .sidebar div img {
+      margin-bottom: 15px;
+   }
+
+   .sidebar p {
+      text-align: center;
+   }
 }
