@@ -286,6 +286,10 @@ footer li img:hover {
 /* content display depending on device screen size */
 @media screen and (max-width: 516px) {
    .jumbotron {
+      height: 1px;
+   }
+
+   #jumbotext {
       display: none;
    }
 }
