@@ -28,7 +28,7 @@ header h1 a {
    color: white;
 }
 
-header h1 a:hover {
+header h1 a:hover, header h1 a:link, header h1 a:visited {
    color: white;
    text-decoration: none;
 }
@@ -307,6 +307,20 @@ article img {
    width: 18rem;
 }
 
+#scroll-up {
+   position: fixed;
+   bottom: 70px;
+   right: 50px;
+   height: 60px;
+   width: 60px;
+   z-index: 1;
+   cursor: pointer;
+}
+
+#scroll-up:hover {
+   opacity: 0.5;
+}
+
 footer {
    font-size: 12px;
    height: 45px;
@@ -427,6 +441,10 @@ footer li img:hover {
    .sidebar p {
       padding-top: 1.7rem;
    }
+   
+   #scroll-up {
+      display: none;
+   }
 }
 
 @media screen and (min-width: 635px) and (max-width: 1200px) {
@@ -442,6 +460,10 @@ footer li img:hover {
 
    .sidebar p {
       padding-top: 1.7rem;
+   }
+
+   #scroll-up {
+      display: none;
    }
 }
 

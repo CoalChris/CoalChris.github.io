@@ -13,11 +13,13 @@
    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
    <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-sanitize.min.js"></script>
-   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script> 
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+   <script type="text/javascript" src="ng-infinite-scroll.min.js"></script> 
    <script type="text/javascript" src="index.js"></script>
    <!--AngularJS Scripts-->
    <script type="text/javascript" src="app.js"></script>
    <script type="text/javascript" src="stories.js"></script>
+   <script type="text/javascript" src="scroll.js"></script>
 </head>
    <body ng-controller="stories">
       <header class="container-fluid">
@@ -62,7 +64,7 @@
             <p class="col-sm-2" ng-click="filter('food')">Food</p>
             <p class="col-sm-2" ng-click="filter('anime')">Anime</p>
             <p class="col-sm-2" ng-click="filter('religion')">Religion</p>
-            <a href="https://www.facebook.com/coal.chris" target="_blank" class="col-sm-2">Facebook</a>
+            <p class="col-sm-2" ng-click="filter('website')">Website</p>
             <a href="https://www.youtube.com/channel/UCf9J4CNaeTISEJAm-nR-nmg" target="_blank" class="col-sm-2">YouTube</a>
          </div>
       </section>
@@ -76,7 +78,7 @@
             </p>
             <div id="posts"></div>
          </div>
-         <div id="main">
+         <div id="main" infinite-scroll="loadMore()" infinite-scroll-distance="1" infinite-scroll-disabled="maxResults > numArticles">
             <article ng-repeat="article in articles | filter: filterType | limitTo: maxResults">
                <h1 class="title">{{ article.title }}</h2>
                <p class="date">{{ article.date }}</p>
@@ -87,6 +89,7 @@
             </article>
          </div>
       </section>
+      <img scroll-to="#navbar" id="scroll-up" src="up-arrow.png">
       <footer class="container-fluid">
          <div class="row">
             <p class="col-sm-4">&copy; 2017 CC Group</p>

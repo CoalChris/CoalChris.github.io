@@ -8,6 +8,7 @@ $(document).ready(function() {
    $("footer").hide();
    $("header").hide();
    $("#dropdown-menu").hide();
+   $("#scroll-up").hide();
    //$(".text").hide();
    
 
@@ -21,6 +22,15 @@ $(document).ready(function() {
    $("#dropdown-menu").click(function() {
       $("#dropdown-menu").toggle();
       $("#menu-btn").toggleClass('open');
+   });
+   $(window).scroll(function() {
+      if ($(window).width() > 1200) {
+         if ($(window).height() <= $(window).scrollTop()) {
+            $("#scroll-up").fadeIn(500);
+         } else {
+            $("#scroll-up").fadeOut(500);
+         }
+      }
    });
    /*$(".more").click(function() {
       $(this).hide();

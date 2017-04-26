@@ -1,6 +1,46 @@
 app.controller("stories", ["$scope", function($scope) {
    $scope.articles = [ 
       {
+         title: "UPDATE 26/04/2017",
+         image: "maintenance.jpg",
+         date: "26 April 2017",
+         tag: "website",
+         blurb: "Added features.",
+         text: "Infinite scrolling.<br>Back to top button."
+      },
+      {
+         title: "Cherry Blossom Season Ending",
+         image: "sakura.jpg",
+         date: "26 April 2017",
+         tag: "travel",
+         blurb: "The cherry blossoms attract thousands of tourists every year in Japan. It's not too late to visit yet! Find out about cherry blossom viewing now!",
+         text: "Japan doesn't have a national flower, but the iconic flower would definitely be the cherry blossom, or <i>sakura</i>, due to their popularity and fame overseas. Although, some would argue that the chrysanthemum is the <a href=\"https://en.wikipedia.org/wiki/Imperial_Seal_of_Japan\" target=\"_blank\">emperor's seal</a> and should be the national flower. Regardless, it remains true that flower viewing, or <i>hanami</i>, brings flocks of both domestic and international tourists across the nation. The cherry blossom season starts in February, and sweeps across the country going north due to differing climates, and subsequently differing blooming periods. There are only two weeks left until the end of the season, and the remaining regions are Takayama and Kitakami (current), and all the way up to Sapporo (start of May).<br><br>During the season, you'll find the highest traffic in the smallest towns in Japan. This is attributed to the commercialisation of the flower viewing season, such as local festivals in towns and cities, limited seasonal goods, and an influx of media coverage. For Australian university students, the best time to visit Japan would be at the end of summer break, in February just before the semester starts. There are only a handful of blooming locations at this time, and I decided to visit Kawazu in the Shizuoka region. It's a long trek from Tokyo, and not fully covered by the <a href=\"http://www.japan-guide.com/e/e2361.html\" target=\"_blank\">JR Pass</a>, but one of the best places for viewing cherry blossoms in February. A river runs through the middle of the town, and the riverside is brimming with cherry blossom trees. Tourists travel up and down this hour-long walk, snapping beautiful shots of the flowers and river, stuffing their faces with local treats from food stalls, and stopping to pay tribute to various landmarks around Kawazu.<br><br>If you're planning on visiting Japan, early February is the perfect period for snow festivities and sports in Japan's northern region, Hokkaido, while having the option to head down to the southern regions in mid-February for flower viewing. An easy way to plan for <i>hanami</i> is to follow the <a href=\"http://www.japan-guide.com/sakura/\" target=\"_blank\">forecasted blooming season</a>."
+      },
+      {
+         title: "Nuclear Fire Instant Ramen",
+         image: "spicy-instant-noodles.jpg",
+         date: "26 April 2017",
+         tag: "food",
+         blurb: "Koreans have been producing some of the hottest instant ramen every year. Earlier this year, Samyang released a new pack of hellish instant ramen supposedly twice the spiciness levels of its predecessor. How did it fare?",
+         text: "Samyang released it's original Spicy Chicken Ramen back in 2016 and many of the poor souls who attempted the instant noodles gave up if they weren't used to eating spicy. Now the new Samyang 2x Spicy \"Nuclear\" Fire Chicken Ramen is out, and has been said to be the spiciest noodles in Korea. I happened upon a pack of these given to me, but you can purchase them online and at local imports stores in Australia, possibly even local Asian grocers. Deciding to try them out and test my tolerance of hot ramen, these are the results...<br><br>The cooking method is simple and similar to instant stir-fry noodles. Boil for roughly 6 minutes, drain (packaging says leave some water inside), add the included sauce, and mix well. My mother was walking pass and decided to sneak in a few strands of those hot-red noodles while I was throwing out the packaging. As someone who can't deal with spicy foods, she was chugging water down for the next minute or so. Although, she did come back for another few strands after, showing how awesome the flavour of the sauce is. Now onto my own experiences with these deathly instant noodles.<br><br>I've been gradually getting used to spicy foods. Starting at Kettle chilli chips and moving to things like Nongshim's Shin Ramyun instant ramen, traditional Chinese spicy offal soup noodles, and Sichuan chilli dishes, I thought I'd stand a decent chance against these fiery noodles. I was wrong. My confidence backfired against me. Taking my cautious first strands of the ramen noodles, I took in the spicy and salty flavours, the bouncy and chewy texture of the noodles and how it compared to other Korean instant ramen like Nongshim or Paldo. First impressions were that it was only a bit spicier than Shin Ramyun, but was easier to handle because there wasn't spicy soup running down my throat and up my sinus stimulating a cough or a sneeze. Devouring a few mouthfuls because of my premature verdict, I got half-way through before the spiciness really kicked in. Most spicy foods don't start burning until your second or third mouthful, but Samyang takes a bit more. Each bite seems to add on to the previous, and it doesn't just cap at some point, it keeps on going! I was struggling to maintain my composure when I was gasping for fresh, cool air to save me from this burning sensation. I'd been aiming to finish the pack without any drinks in one fell swoop, but by now it was unbearable and I had to get a glass of milk. After a sip of milk, I was ready to get back into the game. One small mouthful of the killer noodles and I was taking another sip of milk. Next mouthful? Two sips of milk. By the time I'd finished, I'd gone through 2 glasses of milk, a glass of water, and some apple juice. They all worked momentarily, but by the next bite the inferno in my mouth just came back even hotter than before. \"Nuclear\" is a good description of the rate at which the spiciness levels explode, but 'napalm' is the word I'd use to depict the unquenchable flames punching at my tastebuds. If you thought it was all over, you'd be in for a surprise. My tongue and lips continued to burn for the next 10 minutes or so after I'd sterilised them with milk and water. My head was still burning from the extreme spiciness and sweat dripped from my forehead. But every bite had been worth it. That sauce was the masterpiece Samyang had produced which kept the delicious salty roast chicken flavour while doubling spiciness into the very gates to hell.<br><br>I have to give it to Samyang, they have really made something special. The noodles are some of the best ones I've had, and perfect for chewy noodle lovers. However, it's the sauce which keeps you wanting more even though you can't feel your tongue or lips anymore."
+      },
+      {
+         title: "Everyday Brunch",
+         image: "cereal.jpg",
+         date: "26 April 2017",
+         tag: "food lifestyle",
+         blurb: "You know how everyone always goes on and on about how amazing and fancy brunch is? Well this is how it looks for me...",
+         text: "I'm not studying for any certifications. I work night shifts. It seems like I live in an entirely different world to everyone around me. So how does this affect my daily schedule?<br><br>Well it means that more often than not, I'll be staying up late after work to play games, watch anime, do some programming, or make preparations for various things coming up. The outcome? Sleeping at around 2am-3am <b>every</b> night. That also means waking up late the next morning. In fact, it means I wake up at an average time of 10:30am! I get up, I make myself presentable, it's still only been 10 minutes. I pick up my phone, okay cool a few notifications, I'll check them out - 10 minutes. Flip through a Bible passage to start the 'morning' with some spiritual growth or reflection. Add in some prayer? Easy! It's only been 15 minutes! I still have plenty of time to scroll through my Facebook news feed and laugh at some photos and videos, tag some friends in memes, and reply to all those messages I received at 8am whilst still asleep. UNSW Love Letters? Those broken hearts are singing music to my ears. Click-bait articles? Consider them read! And now it's about time to grab breakfas- WAIT IT'S NOON ALREADY?!<br><br>And thus I have my classic Nutrigrain (or Milo) cereal every day for brunch. Quite fancy, right?<br><br>Next time you see me before noon, remember how much sleep, procrastination and exquisite brunches I've sacrificed for you."
+      },
+      {
+         title: "My Big Fat Greek Dining",
+         image: "platia.jpg",
+         date: "26 April 2017",
+         tag: "food",
+         blurb: "Never tried Greek? Hear about my first impressions of Greek cuisine at Platia, Top Ryde City.",
+         text: "Bread and dip? Skewered meat? Yoghurt? That's all I really knew about Greek food. Taking advantage of a recent <a href=\"https://www.groupon.com.au/deals/platia-greek-taverna-1\" target=\"_blank\">Groupon deal for Platia</a>, I had a proper Greek dining experience on Sunday night. This was my very first time visiting a Greek restaurant. I had no idea what they'd serve us because the menu is set by the restaurant depending on available ingredients, but I figured it'd definitely give a taste of various Greek delectables, right?<br><br>Starting off was some pita bread with tamara, tsaziki and tirokafteri (tasted like gherkin, feta cheese and lemon juice). Pretty standard looking Greek starters, I wasn't surprised. The tamara dip was definitely my favourite of the three, with its smooth mix of salted, cured fish roe, olive oil and fresh lemon juice. Next was Greek salad, my worst nemesis, and nothing new. I decided not to eat it. The main course consisted of a huge meat and chips platter. This was what I'd been waiting for all night. Loaded with chicken and lamb souvlaki, sheftalia (onion and parsley-filled sausages), salami, pork belly pancetta, and a bed of crispy golden chips, this was a great sight for an enthusiast of all things meat and chips (fish n' chips, steak n' chips, HSP, you name it). Going through the meats, there were all kinds of textures and meaty flavours to enjoy. I've always been a sucker for souvlaki which is grilled meat on a skewer. Platia had thick, juicy, succuluent pieces of chicken and lamb on the platter, done perfectly. Pork belly pancetta added a familiar taste to the platter, with its tender pork meat and crispy pork skin reminding me of Chinese barbecue pork. The sheftalia turned out to be worse than I expected, with an unusually high ratio of onion and parsley to meat, causing the sausage to be rather crunchy than soft and juicy. The serving was quite large, and by the time I finished the last chip, I was more than happy to sit around in a food coma for the next half an hour chatting.<br><br>What did I learn from this experience? Greek cuisine is everything I expected. Bread, meat, and well the yoghurt was mixed in the tsaziki. Would I go again? I think this is the big question for most European cuisines. They use recipes evolved over the ages, they can taste amazing, they're often very refined and well-presented, but with that luxury comes a hefty price. Just as I'd rather get Domino's pizza over any other Italian restaurant, I wouldn't visit Platia normally with its $50 per person average pricing. I'd stick with my supermarket dips and locally (or home-made) flat bread. I'd consider going just for the wide range of meats available with the platter, for those interested in visiting.<br><br>Note: The Groupon deal has already sold out at time of posting."
+      },
+      {
          title: "UPDATE 23/04/2017",
          image: "maintenance.jpg",
          date: "23 April 2017",
@@ -44,13 +84,14 @@ app.controller("stories", ["$scope", function($scope) {
          title: "SETTING UP HOME",
          image: "home.png",
          date: "6 April 2017",
-         tag: "website technology",
+         tag: "website",
          blurb: "The foundations of this website have begun development! Yay!",
          text: "Constructed from another conceptual webpage <a href=\"old.html\" target=\"_blank\">found here</a>."
       }
    ];
 
    $scope.type = "all";
+   $scope.numArticles = 11;
    $scope.maxResults = 5;
 
    $scope.filterType = function(story) {
@@ -68,7 +109,11 @@ app.controller("stories", ["$scope", function($scope) {
       if (value != 'more') {
          $scope.type = value;
       }
-      $scope.numResults = 0;
+      $scope.$apply();
+   }
+
+   $scope.loadMore = function() {
+      $scope.maxResults += 5;
       $scope.$apply();
    }
 }]);
