@@ -377,7 +377,7 @@ footer li img:hover {
 }
 
 @media screen and (min-width: 1201px) and (max-width: 1330px) {
-   #navbar a {
+   #navbar #nav-website, #navbar a {
       display: none;
    }
 
