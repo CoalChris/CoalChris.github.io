@@ -307,6 +307,14 @@ article img {
    width: 18rem;
 }
 
+#share {
+  clear: both;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  display: block;
+}
+
 #scroll-up {
    position: fixed;
    bottom: 70px;
