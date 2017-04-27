@@ -518,7 +518,8 @@ footer li img:hover {
 /* social sharing section */
 @media screen and (max-width: 594px) {
    .fb-follow {
-      margin-left: 12%;
+      margin-left: 1em;
+      margin-right: 1em;
    }
 }
 
