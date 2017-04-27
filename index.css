@@ -308,13 +308,15 @@ article img {
 }
 
 #share {
-  clear: both;
   text-align: center;
-  display: block;
 }
 
 #share-small {
   display: inline;
+}
+
+.g-ytsubscribe {
+  padding-top: 0.3em;
 }
 
 #scroll-up {
@@ -409,6 +411,7 @@ footer li img:hover {
 }
 
 /* content display depending on device screen size */
+/* jumbotron section */
 @media screen and (max-width: 516px) {
    .jumbotron {
       height: 1px;
@@ -439,6 +442,7 @@ footer li img:hover {
    }
 }
 
+/* content section */
 @media screen and (max-width: 634px) {
    .sidebar {
       margin-bottom: 40px;
@@ -504,4 +508,18 @@ footer li img:hover {
    .sidebar p {
       text-align: center;
    }
+}
+
+/* social sharing section */
+@media screen and (min-width: 595px) and (max-width: 1200px) {
+  #share {
+    display: inline;
+    padding-top: 0.5em;
+  }
+}
+
+@media not screen and (min-width: 595px) and (max-width: 1200px) {
+  #share {
+    display: block;
+  }
 }
