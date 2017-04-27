@@ -509,17 +509,29 @@ footer li img:hover {
    #profile p {
       text-align: center;
    }
+
+   .fb-follow {
+      margin-left: 6%;
+   }
 }
 
 /* social sharing section */
+@media screen and (max-width: 594px) {
+   .fb-follow {
+      margin-left: 12%;
+   }
+}
+
 @media screen and (min-width: 595px) and (max-width: 1200px) {
    #share {
       display: inline-block;
       margin-left: 1em;
+      margin-right: 1em;
    }
 
    .fb-follow {
       float: left;
+      margin-top: 0.5em;
       margin-bottom: 0.4em;
    }
 
@@ -532,10 +544,6 @@ footer li img:hover {
 @media not screen and (min-width: 595px) and (max-width: 1200px) {
    #share {
       display: block;
-   }
-
-   .fb-follow {
-      margin-left: 10%;
    }
 
    #share-small {
