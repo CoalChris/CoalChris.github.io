@@ -472,6 +472,7 @@ footer li img:hover {
 
    #profile {
       display: inline-block;
+      margin-bottom: 0.5em;
    }
 
    #dp img {
@@ -520,9 +521,8 @@ footer li img:hover {
 /* social sharing section */
 @media screen and (min-width: 595px) and (max-width: 1200px) {
   #share {
-    display: inline;
-    margin-top: 0.5em;
-    margin-left: 1.5em;
+    display: inline-block;
+    margin-left: 1em;
   }
 
   #share-small {
