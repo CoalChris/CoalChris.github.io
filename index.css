@@ -296,9 +296,10 @@ article img {
 }
 
 .sidebar {
-   padding: 20px 20px 20px 20px;
+   padding: 20px 20px 0px 20px;
    background-color: white;
    font-size: 1.7rem;
+   display: block;
 }
 
 #dp img {
@@ -307,16 +308,12 @@ article img {
    width: 18rem;
 }
 
-.sidebar {
-  display: block;
-}
-
 #share {
   text-align: center;
 }
 
 #share-small {
-  display: inline;
+  display: inline-block;
 }
 
 #youtube {
@@ -533,5 +530,6 @@ footer li img:hover {
 @media not screen and (min-width: 595px) and (max-width: 1200px) {
   #share {
     display: block;
+    margin-left: 0.3em;
   }
 }
