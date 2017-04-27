@@ -466,7 +466,7 @@ footer li img:hover {
 }
 
 @media screen and (min-width: 635px) and (max-width: 1200px) {
-   .sidebar {
+   .sidebar div {
       display: inline-block;
       margin-bottom: 40px;
    }
@@ -519,10 +519,11 @@ footer li img:hover {
   #share {
     display: inline;
     margin-top: 0.5em;
+    margin-left: 1.5em;
   }
 
   #share-small {
-    margin-left: -10%;
+    margin-left: -15%;
   }
 }
 
