@@ -319,8 +319,8 @@ article img {
   display: inline;
 }
 
-.g-ytsubscribe {
-  margin-top: 1em;
+#youtube {
+  padding-top: 0.3em;
 }
 
 #scroll-up {
@@ -466,9 +466,12 @@ footer li img:hover {
 }
 
 @media screen and (min-width: 635px) and (max-width: 1200px) {
+   .sidebar {
+      margin-bottom: 40px;
+   }
+
    #profile {
       display: inline-block;
-      margin-bottom: 40px;
    }
 
    #dp img {
@@ -523,7 +526,7 @@ footer li img:hover {
   }
 
   #share-small {
-    margin-left: -15%;
+    margin-left: -20%;
   }
 }
 
