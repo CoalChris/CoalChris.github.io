@@ -6,7 +6,7 @@ app.controller("stories", ["$scope", function($scope) {
          date: "26 April 2017",
          tag: "website",
          blurb: "Added features.",
-         text: "Infinite scrolling.<br>Back to top button."
+         text: "Infinite scrolling.<br>Back to top button.<br>Social sharing buttons."
       },
       {
          title: "Cherry Blossom Season Ending",

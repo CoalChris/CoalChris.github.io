@@ -310,9 +310,11 @@ article img {
 #share {
   clear: both;
   text-align: center;
-  display: flex;
-  justify-content: flex-end;
   display: block;
+}
+
+#share-small {
+  display: inline;
 }
 
 #scroll-up {
