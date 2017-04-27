@@ -522,14 +522,20 @@ footer li img:hover {
     margin-left: 1em;
   }
 
+  .fb-follow {
+   width: 40%;
+   margin-bottom: 0.4em;
+  }
+
   #share-small {
-    margin-left: -20%;
+    width: 50%;
+    display: inline;
   }
 }
 
 @media not screen and (min-width: 595px) and (max-width: 1200px) {
   #share {
     display: block;
-    margin-left: 0.3em;
+    margin-left: 20%;
   }
 }
