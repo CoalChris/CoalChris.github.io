@@ -1,6 +1,14 @@
 app.controller("stories", ["$scope", function($scope) {
    $scope.articles = [ 
       {
+         title: "MOVED HOME",
+         image: "home.png",
+         date: "14 June 2017",
+         tag: "website",
+         blurb: "Changed the host to Heroku.",
+         text: "Restructured the website routing and now require an application hosting service. Heroku provides a free limited service which shall suffice.<br><br>Website now has the capacity to share links.<br><br>Find the new website <a href=\"https://thechristimes.herokuapp.com/\">here</a>!"
+      },
+      {
          title: "UPDATE 26/04/2017",
          image: "maintenance.jpg",
          date: "26 April 2017",
